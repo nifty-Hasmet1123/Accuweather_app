@@ -76,6 +76,3 @@ Now, you can access the application and start using it.
 
 Contributions to the AccuWeather application are welcome! If you encounter any issues, have feature requests, or would like to contribute code, please feel free to open an issue or submit a pull request on the GitHub repository.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
