@@ -1,0 +1,160 @@
+body {
+    background-image: url("../assets/img/dazzling_background.jpg");
+    background-size: cover;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+#accuweather-txt {
+    background-image: linear-gradient(-225deg, #a39faf 0%, #f0064c 29%, #f5e508 67%, #1eff00 100%);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    animation: 2s linear infinite textclip;
+}
+
+@keyframes textclip {
+    to {
+      background-position: 200%;
+    }
+  }
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: 10rem;
+    padding: 3rem;
+    background-color: rgba(247, 220, 166, 0.4);
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 428px) {
+    .input-container {
+        justify-content: center;
+        padding: 1rem;
+        flex-wrap: wrap;
+    }
+}
+
+#accuweather-txt {
+    margin-bottom: 40px;
+}
+
+.response-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10rem;
+    gap: 20px;
+}
+
+.pages {
+    display: flex;
+    gap: 30px;
+    justify-content: space-evenly;
+}
+
+.day-btn {
+    padding: 7px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.day-btn:hover {
+    transform: scale(1.07);
+}
+
+.no-content {
+    display: none;
+}
+
+.text-container {
+    max-width: 40rem;
+    max-height: 32rem;
+    padding: 30px;
+    overflow: auto;
+    border: 3px solid grey;
+    border-radius: 40px 0 0 40px;
+    color: #030303;
+    background-color: rgba(255, 255, 255, 0.745);
+}
+
+.text-container::-webkit-scrollbar {
+    width: 5px; 
+}
+
+.text-container::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+.text-container::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 20px;
+}
+
+.dropdown {
+    padding: 6px;
+    font-size: 1.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media only screen and (max-width: 428px) {
+    .dropdown {
+        width: auto;
+    }
+}
+
+.button__forecast {
+    padding: 0.6rem;
+    border-radius: 50px;
+    outline: none;
+    background-color: goldenrod;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    font-weight: 700;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.button__forecast:hover {
+    background-color: aqua;
+}
+
+
+#para-word {
+    font-size: 1.5rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    color: #fff;
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 428px) {
+    .footer {
+        position: absolute;
+        left: 30%;
+        right: 30%;
+    }
+}
